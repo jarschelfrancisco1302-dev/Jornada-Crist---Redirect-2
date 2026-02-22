@@ -23,8 +23,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white font-sans selection:bg-red-600 selection:text-white overflow-x-hidden">
-      {/* Top Warning Bar */}
+    <div className="min-h-screen bg-[#0A0A0A] text-white font-sans selection:bg-red-600 selection:text-white overflow-x-hidden relative">
+      {/* Back Button */}
+      <a 
+        href="https://pay.hotmart.com/B104571593W?off=2ilxtgm3&checkoutMode=10"
+        className="absolute top-14 left-4 z-50 flex items-center gap-1 text-zinc-500 hover:text-white transition-colors text-[10px] font-bold uppercase tracking-widest no-underline bg-white/5 px-3 py-2 rounded-lg border border-white/10"
+      >
+        <Zap className="w-3 h-3" /> Back
+      </a>
       <div className="bg-red-600 text-white py-2 px-4 text-center text-xs font-bold uppercase tracking-widest animate-pulse">
         ⚠️ Atenção: Não atualize esta página. Esta oferta expirará em instantes.
       </div>
@@ -124,11 +130,14 @@ export default function App() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="w-full space-y-6"
         >
-          <button className="group relative w-full bg-red-600 hover:bg-red-700 text-white font-black py-6 rounded-2xl shadow-[0_0_40px_rgba(220,38,38,0.3)] transition-all active:scale-[0.98] uppercase tracking-tighter text-lg flex items-center justify-center gap-3 overflow-hidden">
+          <a 
+            href="https://pay.hotmart.com/B104571593W?off=2ilxtgm3&checkoutMode=10"
+            className="group relative w-full bg-red-600 hover:bg-red-700 text-white font-black py-6 rounded-2xl shadow-[0_0_40px_rgba(220,38,38,0.3)] transition-all active:scale-[0.98] uppercase tracking-tighter text-lg flex items-center justify-center gap-3 overflow-hidden no-underline"
+          >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
             <Zap className="w-5 h-5 fill-current" />
             QUERO MEU ACESSO AGORA
-          </button>
+          </a>
           
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-bold uppercase tracking-widest">
