@@ -94,7 +94,18 @@ export default function App() {
           <div className="relative z-10">
             <h2 className="text-xs uppercase tracking-[0.3em] font-black mb-6 text-zinc-500">Acesso Vitalício Liberado</h2>
             
-            <ul className="space-y-4 text-left mb-8">
+            <div className="flex flex-col items-center mb-8">
+              <span className="text-xs line-through text-zinc-600 mb-1 font-bold uppercase tracking-tighter">DE R$ 27,90 POR R$ 19,90</span>
+              <div className="flex items-baseline gap-1">
+                <span className="text-sm font-bold text-red-600 uppercase tracking-tighter">Apenas</span>
+                <span className="text-7xl font-black tracking-tighter text-white">R$ 9,90</span>
+              </div>
+              <p className="text-[10px] uppercase tracking-widest font-bold text-zinc-500 mt-2">
+                Pagamento único. Sem pegadinhas.
+              </p>
+            </div>
+
+            <ul className="space-y-4 text-left mb-8 border-t border-zinc-800 pt-8">
               {[
                 "Tudo o que foi prometido anteriormente",
                 "Acesso imediato e sem mensalidades",
@@ -109,17 +120,6 @@ export default function App() {
                 </li>
               ))}
             </ul>
-
-            <div className="flex flex-col items-center border-t border-zinc-800 pt-6">
-              <span className="text-xs line-through text-zinc-600 mb-1 font-bold">DE R$ 27,90 POR R$ 19,90</span>
-              <div className="flex items-baseline gap-1">
-                <span className="text-sm font-bold text-red-600 uppercase tracking-tighter">Apenas</span>
-                <span className="text-6xl font-black tracking-tighter text-white">R$ 9,90</span>
-              </div>
-              <p className="text-[10px] uppercase tracking-widest font-bold text-zinc-500 mt-2">
-                Pagamento único. Sem pegadinhas.
-              </p>
-            </div>
           </div>
         </motion.section>
 
